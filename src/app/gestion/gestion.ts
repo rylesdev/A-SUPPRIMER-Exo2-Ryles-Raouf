@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
+import { ContactService } from '../contact-service';
 
 @Component({
-  imports: [],
   selector: 'app-gestion',
-  styleUrl: './gestion.scss',
+  imports: [],
   templateUrl: './gestion.html',
+  styleUrl: './gestion.scss',
 })
-export class Gestion {}
+export class Gestion {
+  public dernierContact: any = null;
+
+  constructor(private contactService: ContactService) {
+    this.dernierContact = this.contactService.dernierContact;
+  }
+}

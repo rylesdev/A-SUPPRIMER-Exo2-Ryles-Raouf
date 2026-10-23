@@ -1,4 +1,12 @@
-import { Service } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Service()
-export class ContactService {}
+@Injectable({
+  providedIn: 'root',
+})
+export class ContactService {
+  public dernierContact: any = null;
+
+  public enregistrerContact(contact: any) {
+    this.dernierContact = contact;
+  }
+}

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-accueil',
-  styleUrl: './accueil.scss',
+  imports: [],
   templateUrl: './accueil.html',
+  styleUrl: './accueil.scss',
 })
 export class Accueil {}

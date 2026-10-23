@@ -1,1 +1,28 @@
-<p>gestion works!</p>
+<div class="gestion">
+
+  @if (dernierContact) {
+
+    <h1>Dernier contact envoyé</h1>
+
+    <div class="contact-info">
+      <p>Prénom : {{ dernierContact.firstName }}</p>
+      <p>Nom : {{ dernierContact.lastName }}</p>
+      <p>Âge : {{ dernierContact.age }}</p>
+
+      @if (dernierContact.email) {
+        <p>Email : {{ dernierContact.email }}</p>
+      }
+
+      <p>Commentaire : {{ dernierContact.comment }}</p>
+    </div>
+
+  } @else {
+
+    <div class="not-found">
+      <h1>404 Not Found</h1>
+      <p>Aucun formulaire de contact n'a encore été envoyé.</p>
+    </div>
+
+  }
+
+</div>

@@ -1,1 +1,18 @@
-<p>liste works!</p>
+<div class="liste">
+
+  <div class="film-links">
+    @for (film of films; track film) {
+      <a (click)="selectFilm(film)">
+        {{ film.title }}
+      </a>
+    }
+  </div>
+
+  @if (selectedFilm) {
+    <div class="selected-film">
+      <h2>{{ selectedFilm.title }}</h2>
+      <img [src]="selectedFilm.image" [alt]="selectedFilm.title">
+    </div>
+  }
+
+</div>

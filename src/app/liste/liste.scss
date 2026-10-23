@@ -1,0 +1,28 @@
+.liste {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.film-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.film-links a {
+  color: #3b63c4;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.selected-film {
+  margin-top: 40px;
+}
+
+.selected-film img {
+  width: 300px;
+  max-height: 450px;
+  object-fit: contain;
+}
